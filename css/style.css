@@ -482,6 +482,7 @@ footer {
         align-items: center;
         gap: 2em;
         padding: 50px 100px;
+        width: 100%;
     }
 
     .service h3 {
@@ -511,7 +512,7 @@ footer {
         grid-template-columns: repeat(4, 1fr);
         padding: 60px 10px;
         gap: 3em;
-        width: 100vw;
+        width: 100%;
     }
 
     .footer-about p {
