@@ -167,8 +167,9 @@ header nav ul li a {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    gap: 12px;
+    gap: 5px;
     scroll-padding: 14px;
+    width: 95%;
 }
 
 .category_card {
@@ -418,7 +419,7 @@ footer {
 
 @media screen and (min-width:768px) {
     header {
-        padding: 20px 150px;
+        padding: 20px 50px;
     }
 
     .menu {
@@ -440,19 +441,22 @@ footer {
     }
 
     .carousel {
-        padding: 150px;
+        padding: 150px 50px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        width: 100vw;
+        width: 100%;
     }
+
+
 
     .carousel img {
         width: 400px;
     }
 
     .category {
-        width: 70%;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .categories {
@@ -466,7 +470,7 @@ footer {
 
     .missions {
         flex-direction: row;
-        width: 75%;
+        width: 85%;
         margin: 30px auto;
         height: 500px;
     }
@@ -485,7 +489,7 @@ footer {
     }
 
     .articles_container {
-        width: 75%;
+        width: 85%;
         margin: 0 auto;
     }
 
@@ -505,9 +509,13 @@ footer {
     .footer_contents {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        padding: 60px 100px;
+        padding: 60px 10px;
         gap: 3em;
         width: 100vw;
+    }
+
+    .footer-about p {
+        font-size: 14px;
     }
 
     .newsletter-container {
