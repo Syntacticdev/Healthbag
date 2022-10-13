@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthbag - Contact us</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <div class="logo">
+                <span>Healthbag</span>
+            </div>
+        </a>
+
+
+        <nav class="nav_lists">
+            <ul>
+                <li><i class="fa-sharp fa-solid fa-arrow-right"></i> <a href="./index.html">Home</a></li>
+                <li><i class="fa-sharp fa-solid fa-arrow-right"></i> <a href="./about.html">About</a></li>
+                <li><i class="fa-sharp fa-solid fa-arrow-right"></i> <a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu"><i class="fa-sharp fa-3x fa-solid fa-bars"></i></button>
+    </header>
+
+
+    <main>
+        <div class="topbar">
+            <h2>Contact us</h2>
+        </div>
+
+        <section class="contact_wrapper">
+            <div class="contact_form_container">
+                <h3>Keep in touch with us</h3>
+                <form action="" class="contact-form">
+                    <div class="contact-details">
+                        <input type="text" class="" placeholder="Name">
+                        <input type="text" class="" placeholder="Email">
+                        <input type="text" class="" placeholder="Phone">
+                        <input type="text" class="" placeholder="Request">
+                    </div>
+                    <div class="contact_message_wrapper">
+                        <textarea name="message" class="message" placeholder="Your Message" cols="30"
+                            rows="10"></textarea>
+                    </div>
+
+                    <button type="submit" class="send-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact_list_container">
+                <h3>Contact details</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut perferendis rem illo ducimus cum
+                    itaque blanditiis dicta suscipit laudantium delectus rerum nesciunt deserunt! Eveniet!</p>
+
+                <ul class="contact-lists">
+                    <li class="contact-list"><i class="fa-solid fa-map-location-dot"></i></i><span>31002A, Melbourne St,
+                            Australia.</span></li>
+                    <li class="contact-list"><i class="fa-solid fa-mobile-screen-button"></i> <span>+4 123 5555
+                            2323</span></li>
+                    <li class="contact-list"><i class="fa-sharp fa-solid fa-envelope"></i> <span>
+                            syntacticdev@gmail.com</span></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_contents">
+                <div>
+                    <h3 class="footer_section_label">About us</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio cum placeat adipisci temporibus
+                        nisi
+                        similique quae, fugit quisquam libero, reprehenderit totam ullam culpa. Odit, corporis?</p>
+                </div>
+                <div>
+                    <h3 class="footer_section_label">Usefull Links</h3>
+                    <ul class="footer_lists">
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Our mission</a></li>
+                        <li><a href="">How it works?</a></li>
+                        <li><a href="">Our teams</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3 class="footer_section_label">More</h3>
+                    <ul class="footer_lists">
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Our mission</a></li>
+                        <li><a href="">How it works?</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter-container">
+                    <h3 class="footer_section_label">Newletter</h3>
+                    <div>
+                        <form class="newsletter">
+                            <input type="text" placeholder="Enter your email">
+                            <button type="submit">Nex</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>Copyright &copy; 2022 by Healthbag. All Rights Reserved by Syntactic Dev.</span>
+            </div>
+        </footer>
+    </main>
+
+
+
+    <script>
+        const navList = document.querySelector(".nav_lists")
+        const menuBtn = document.querySelector(".menu")
+
+        menuBtn.addEventListener("click", () => {
+            navList.classList.toggle("active")
+        })
+
+    </script>
+</body>
+
+</html>

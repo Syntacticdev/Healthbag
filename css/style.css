@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+    user-select: initial;
+    overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 15px;
+    height: 60px;
+    /* margin-bottom: 30px; */
+    background: #fff;
+    /* padding: 0 100px; */
+}
+
+.logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    top: 12;
+}
+
+.logo span {
+    position: relative;
+    z-index: 2;
+}
+
+.logo::before,
+.logo::after {
+    content: "";
+    position: absolute;
+    top: -50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.logo::before {
+    background: red;
+    left: -20px;
+}
+
+.logo::after {
+    left: -30px;
+    background: blue;
+}
+
+header nav {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    transition: 0.5s;
+    background: #fff;
+    width: 100%;
+    padding: 50px 0;
+    font-weight: 700;
+}
+
+header nav.active {
+    left: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: grid;
+
+}
+
+header nav ul li {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+header nav ul li:hover {
+    background: whitesmoke;
+}
+
+header nav ul li a {
+    margin: 20px 0;
+    color: #262626;
+}
+
+
+
+.menu {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer
+}
+
+.carousel {
+    background: #fff;
+    padding: 60px 10px 40px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.carousel img {
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 150px 0; */
+}
+
+.sneak-pick h3 {
+    font-size: 30px;
+}
+
+.sneak-pick p {
+    margin: 30px 0;
+}
+
+.booknow {
+    margin: 20px 0;
+    background: blue;
+    color: #fff;
+    padding: 10px 40px;
+    transition: .5s;
+}
+
+.booknow:hover {
+    background: goldenrod;
+}
+
+
+/* Category */
+
+.category {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.category_head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    align-items: center;
+}
+
+.category_head button {
+    background: transparent;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+.categories {
+    margin: 0 auto;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 12px;
+    scroll-padding: 14px;
+}
+
+.category_card {
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex: 0 0 50%;
+    justify-content: center;
+    flex-direction: column;
+    scroll-snap-align: start;
+    cursor: pointer;
+}
+
+.category_card:hover {
+    background: blue;
+    color: #fff;
+}
+
+.category_type {
+    margin: 5px 0;
+    font-size: 25px;
+}
+
+/* missions */
+
+.missions {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.missions .image_wrapper {
+    height: 400px;
+    background: #fff;
+    margin: 10px 0 20px 0;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    overflow: hidden;
+}
+
+.missions .image_wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+.mission_lists ul {
+    display: grid;
+    gap: 1em;
+}
+
+.mission_lists ul li {
+    list-style: none;
+}
+
+
+
+.mission {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mission:hover {
+    background: blue;
+    color: #fff;
+}
+
+.mission h3 {
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Service */
+
+.service {
+    padding: 50px 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.service h3 {
+    font-size: 25px;
+}
+
+.service p {
+    margin: 20px 0 30px 0;
+}
+
+.service img {
+    width: 100%;
+}
+
+
+.articles_container {
+    padding: 30px 0;
+}
+
+.articles_detail_bar {
+    padding: 10px;
+}
+
+.articles_detail_bar h3 {
+    font-size: 25px;
+}
+
+
+.article_card {
+    background: #fff;
+    height: 550px;
+    display: grid;
+    grid-template-rows: 45% 43% 12%;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.article_thumbnail {
+    height: 100%;
+    width: 100%;
+}
+
+.article_card_body {
+    padding: 10px;
+    display: grid;
+    align-items: center;
+}
+
+.article_card_date {
+    color: blueviolet;
+    margin: 5px 0;
+}
+
+.article_card_title {
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.article_footer {
+    padding: 10px;
+}
+
+.article_footer i {
+    margin: 0 15px;
+}
+
+.article_footer .readmore-btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.article_footer .readmore-btn span {
+    /* border: 2px solid blue; */
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+    text-align: center;
+    background: blue;
+    color: #fff;
+}
+
+/* footer */
+
+footer {
+    background: #fff;
+}
+
+.footer_contents>div {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.footer_section_label {
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.footer_lists {
+    list-style: none;
+}
+
+.footer_lists li {
+    margin: 5px 0;
+}
+
+.footer_lists li a:hover {
+    color: blue;
+}
+
+.newsletter-container {
+    margin-top: 30px;
+}
+
+.newsletter {
+    width: 100%;
+    display: grid;
+    gap: 2.5%;
+    grid-template-columns: 75% 20%;
+}
+
+.newsletter input,
+.newsletter button {
+    border: none;
+    padding: 15px;
+}
+
+.newsletter input {
+    background: whitesmoke;
+}
+
+.newsletter button {
+    background: blue;
+    color: #fff;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background: goldenrod;
+    color: #fff;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: 700;
+    background: #198ea3;
+    color: #fff;
+    padding: 20px;
+}
+
+.copyright span {
+    font-size: 14px;
+}
+
+@media screen and (min-width:768px) {
+    header {
+        padding: 20px 150px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    header nav {
+        all: unset;
+    }
+
+    header nav ul {
+        list-style: none;
+        display: flex;
+
+    }
+
+    header nav ul li {
+        margin: 0 20px;
+    }
+
+    .carousel {
+        padding: 150px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+    }
+
+    .carousel img {
+        width: 400px;
+    }
+
+    .category {
+        width: 70%;
+    }
+
+    .categories {
+        overflow-x: unset;
+
+    }
+
+    .category_card {
+        flex: 0 0 20%;
+    }
+
+    .missions {
+        flex-direction: row;
+        width: 75%;
+        margin: 30px auto;
+        height: 500px;
+    }
+
+
+    .service {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2em;
+        padding: 50px 100px;
+    }
+
+    .service h3 {
+        font-size: 40px;
+    }
+
+    .articles_container {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .article_card {
+        height: 500px;
+    }
+
+    .article_card_title {
+        font-size: 22px;
+    }
+
+    .footer_contents {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 60px 100px;
+        gap: 3em;
+    }
+
+    .newsletter-container {
+        margin: 0;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        padding: 10px;
+    }
+}

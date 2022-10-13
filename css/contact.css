@@ -1,0 +1,108 @@
+.topbar {
+    padding: 100px 0;
+    background: url('/images/pexels-tima-miroshnichenko-8376271.jpg');
+    background-size: cover;
+    background-position: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.topbar h2 {
+    font-size: 30px;
+    border: 2px solid #fff;
+    padding: 5px 50px;
+}
+
+.contact_form_container h3 {
+    font-size: 30px;
+}
+
+.contact_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 15px;
+}
+
+
+.contact-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin: 20px 0;
+}
+
+.contact-form input {
+    padding: 15px 10px;
+    border: none;
+    outline: none;
+}
+
+.contact-form .message {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 20px;
+    resize: none;
+}
+
+.contact_list_container h3 {
+    margin-bottom: 20px;
+}
+
+.contact-lists {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.contact-lists li {
+    margin-block: 10px;
+}
+
+.contact-lists li span {
+    margin-inline: 10px;
+}
+
+.contact-form .send-btn {
+    background: red;
+    color: #fff;
+    padding: 15px 40px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    transition: .5s;
+    transform-origin: left;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.contact-form .send-btn:hover {
+    background: goldenrod;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+@media screen and (min-width:768px) {
+    .contact_wrapper {
+        grid-template-columns: 60% 40%;
+        width: 70%;
+        margin: 30px auto;
+        gap: 2em;
+        padding: 0;
+    }
+
+
+    .contact-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
