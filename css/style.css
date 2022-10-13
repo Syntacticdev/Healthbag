@@ -443,7 +443,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-
+        width: 100%
     }
 
     .carousel img {
@@ -506,6 +506,7 @@ footer {
         grid-template-columns: repeat(4, 1fr);
         padding: 60px 100px;
         gap: 3em;
+        width: 100%;
     }
 
     .newsletter-container {
