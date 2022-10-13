@@ -115,7 +115,7 @@ details p {
 
 @media screen and (min-width:765px) {
     .about {
-        padding: 60px 150px;
+        padding: 60px 50px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3em;
@@ -124,13 +124,13 @@ details p {
     .doctors .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        width: 75%;
+        width: 100%;
         margin: 0 auto;
         gap: 1em;
     }
 
     .doctor_card {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     }
 }

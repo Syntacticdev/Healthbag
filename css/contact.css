@@ -83,23 +83,19 @@
     background: goldenrod;
 }
 
-/* Set the size of the div element that contains the map */
-#map {
-    height: 400px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
-}
 
 @media screen and (min-width:768px) {
     .contact_wrapper {
         grid-template-columns: 60% 40%;
-        width: 70%;
+        width: 90%;
         margin: 30px auto;
         gap: 2em;
         padding: 0;
     }
 
+    .contact_wrapper>div {
+        width: 100%;
+    }
 
     .contact-details {
         grid-template-columns: repeat(2, 1fr);
