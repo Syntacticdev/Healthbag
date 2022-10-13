@@ -42,7 +42,7 @@
 .doctors .container {
     display: grid;
     padding: 30px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     gap: 2em;
 
@@ -61,6 +61,7 @@
     object-fit: fill;
     background: #fff;
     padding: 10px 0;
+    border-radius: 15px;
 }
 
 .doctor_thumbnail {
