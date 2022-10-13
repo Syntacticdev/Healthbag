@@ -135,6 +135,6 @@ details p {
     }
 
     .departments {
-        width: 100%;
+        width: 100vw;
     }
 }
