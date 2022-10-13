@@ -22,6 +22,10 @@
     gap: 2em;
 }
 
+.about>div {
+    width: 100%;
+}
+
 .about h2 {
     margin-bottom: 10px;
 }
@@ -71,6 +75,7 @@
 
 .departments {
     padding: 20px;
+    width: 100%;
 }
 
 .departments h3 {
