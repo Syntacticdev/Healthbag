@@ -448,6 +448,9 @@ footer {
         width: 100%;
     }
 
+    .carousel>div {
+        width: 100%;
+    }
 
 
     .carousel img {
