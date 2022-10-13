@@ -133,4 +133,8 @@ details p {
         width: 100%;
         margin: 0 auto;
     }
+
+    .departments {
+        width: 100%;
+    }
 }

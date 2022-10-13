@@ -12,6 +12,7 @@ body {
     overflow-x: hidden;
     font-family: 'Roboto Condensed', sans-serif;
     width: 100vw;
+    min-height: 90vh;
 }
 
 a {
@@ -411,6 +412,7 @@ footer {
     background: #198ea3;
     color: #fff;
     padding: 20px;
+    width: 100%;
 }
 
 .copyright span {
