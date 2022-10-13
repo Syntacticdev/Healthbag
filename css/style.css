@@ -291,6 +291,11 @@ header nav ul li a {
     font-size: 25px;
 }
 
+.articles {
+    display: grid;
+    gap: 1.5em;
+}
+
 
 .article_card {
     background: #fff;
@@ -509,6 +514,7 @@ footer {
     .articles {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 0;
     }
 
     .article_card {
