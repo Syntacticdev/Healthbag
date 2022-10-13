@@ -11,6 +11,7 @@ body {
     user-select: initial;
     overflow-x: hidden;
     font-family: 'Roboto Condensed', sans-serif;
+    width: 100vw;
 }
 
 a {
