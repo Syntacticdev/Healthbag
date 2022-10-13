@@ -488,6 +488,10 @@ footer {
         width: 100%;
     }
 
+    .service>div {
+        width: 100%;
+    }
+
     .service h3 {
         font-size: 40px;
     }
